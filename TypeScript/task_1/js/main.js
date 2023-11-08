@@ -1,6 +1,3 @@
-;
-;
-;
 var teacher3 = {
     firstName: 'John',
     fullTimeEmployee: false,

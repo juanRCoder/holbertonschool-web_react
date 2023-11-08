@@ -12,10 +12,10 @@ const student1: Student = {
   location: 'lima', 
 };
 const student2: Student = {
-    firstName: 'celeste',
-    lastName: 'rodriguez',
-    age: 22,
-    location: 'tacna'
+  firstName: 'celeste',
+  lastName: 'rodriguez',
+  age: 22,
+  location: 'tacna'
 }
 
 const studentsList: Student[] = [student1, student2];
@@ -23,12 +23,12 @@ const studentsList: Student[] = [student1, student2];
 const table = document.createElement('table');
 
 studentsList.forEach(student => {
-    const row = table.insertRow();
-    const camp1 = row.insertCell();
-    const camp2 = row.insertCell();
+  const row = table.insertRow();
+  const camp1 = row.insertCell();
+  const camp2 = row.insertCell();
 
-    camp1.textContent = student.firstName;
-    camp2.textContent = student.location;
+  camp1.textContent = student.firstName;
+  camp2.textContent = student.location;
 });
 
 document.body.appendChild(table)
