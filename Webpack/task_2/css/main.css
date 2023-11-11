@@ -1,0 +1,14 @@
+#count {
+    display: inline;
+    font-weight: bold;
+    margin-left: 18px;
+}
+#logo {
+    width: 200px;
+    height: 200px;
+    background-image: url('../assets/holberton-logo.jpg');
+    background-size: cover;
+}
+
+/* cambie la posición del texto del contador 
+que se mostrará a la derecha del botón y en negrita. */
