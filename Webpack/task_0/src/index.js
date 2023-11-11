@@ -1,14 +1,7 @@
 import $ from 'jquery';
 
 $(function() {
-    const paragraphs = 
-    [
-        "Holberton Dashboard",
-        "Dashboard data for the students",
-        "Copyright - Holberton School"
-    ];
-
-    for (const text of paragraphs) {
-        $('body').append(`<p>${text}</p>`);
-    }
+    $('body').append('<p>Holberton Dashboard</p>');
+    $('body').append('<p>Dashboard data for the students</p>');
+    $('body').append('<p>Copyright - Holberton School</p>');
 });
