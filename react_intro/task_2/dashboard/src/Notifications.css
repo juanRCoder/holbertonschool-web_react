@@ -8,9 +8,3 @@
 .Notifications>ul li[data-priority='urgent'] {
     color: #f00;
 }
-.Notifications>button {
-    margin-top: -144px; 
-    margin-right: -23px;
-    transform: scale(.4);
-    cursor: pointer;
-}
