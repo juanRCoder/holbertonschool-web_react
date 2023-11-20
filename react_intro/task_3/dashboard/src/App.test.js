@@ -1,28 +1,33 @@
-import React from "react";
-import { expect } from "chai";
-import { shallow } from "enzyme";
-import App from "./App";
+import React from 'react';
+import { shallow } from 'enzyme';
+import { expect } from 'chai';
+import App from './App';
 
-describe("Testing the <App /> Component", () => {
-  let wrapper;
+describe("Tests cases in App Component", () =>{
+    //Verifica si la etiqueta 'App-header' existe en App.
+    it('App-header exist in App', () => {
+        //envoltura superficial del componente App
+        const wrapper = shallow(<App />);
+        //Busca en App si tiene un div 'App-header'
+        const header = wrapper.find('.App-header');
+        
+        //Expectactiva si tiene un elemento el div
+        expect(header).to.have.length(1);
+    })
 
-  beforeEach(() => {
-    wrapper = shallow(<App />);
-  });
+    //Verifica si la etiqueta 'App-header' existe en App.
+    it('App-body exist in App', () => {
+        const wrapper = shallow(<App />);
+        const header = wrapper.find('.App-body');
+        
+        expect(header).to.have.length(1);
+    })
 
-  it("<App /> is rendered without crashing", () => {
-    expect(wrapper).to.not.be.an("undefined");
-  });
-
-  it("<App /> Render the dashboard header (App-header)", () => {
-    expect(wrapper.find(".App-header")).to.have.lengthOf(1);
-  });
-
-  it("<App /> Render the dashboard body (App-body)", () => {
-    expect(wrapper.find(".App-body")).to.have.lengthOf(1);
-  });
-
-  it("<App /> Render the dashboard footer (App-footer)", () => {
-    expect(wrapper.find(".App-footer")).to.have.lengthOf(1);
-  });
+    //Verifica si la etiqueta 'App-header' existe en App.
+    it('App-footer exist in App', () => {
+        const wrapper = shallow(<App />);
+        const header = wrapper.find('.App-footer');
+        
+        expect(header).to.have.length(1);
+    })
 });
