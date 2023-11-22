@@ -1,0 +1,8 @@
+.App-footer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  border-top: 2px solid #d32e3b;
+  bottom: 0;
+  width: 100vw;
+}
