@@ -1,7 +1,10 @@
 import React from "react";
-import { shallow } from "enzyme";
+import { shallow, configure } from "enzyme";
+import Adapter from 'enzyme-adapter-react-16';
 import { expect } from "chai";
 import Login from "./Login";
+
+configure({adapter: new Adapter()});
 
 describe("Login component to verify it renders without crashing", () => {
     it("Verify that the components render div.App-body", () => {
