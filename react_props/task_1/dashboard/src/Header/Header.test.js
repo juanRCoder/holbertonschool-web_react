@@ -1,7 +1,10 @@
 import React from "react";
-import { shallow } from "enzyme";
+import { shallow, configure } from "enzyme";
 import { expect } from "chai";
+import Adapter from 'enzyme-adapter-react-16';
 import Header from "./Header";
+
+configure({adapter: new Adapter()});
 
 describe("Header component to verify it renders without crashing", () => {
     it("Verify that the components render div.App-header", () => {

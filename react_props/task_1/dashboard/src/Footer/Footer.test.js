@@ -1,7 +1,10 @@
 import React from "react";
-import { shallow } from "enzyme";
+import { shallow, configure } from "enzyme";
 import { expect } from "chai";
 import Footer from "./Footer";
+import Adapter from 'enzyme-adapter-react-16';
+
+configure({adapter: new Adapter()});
 
 describe("Footer component to verify it renders without crashing", () => {
   it("Verify that the components render div.App-body", () => {
